@@ -5,11 +5,12 @@ import { Heart, Eye } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { client } from '@/sanity/lib/client';
 import { womenProductsQuery } from '@/sanity/lib/queries';
-import { Product } from '@/types/product';
+// import { Product } from '@/types/product';
 import { urlFor } from '@/sanity/lib/image';
 import Link from 'next/link';
 import { addToCart, addToWishlist, getWishlistItems, removeFromWishlist } from '@/app/actions/actions';
 import toast from 'react-hot-toast';
+import { Product } from '../../types/product';
 
 export default function WomenProducts() {
   const [allProducts, setAllProducts] = useState<Product[]>([]);

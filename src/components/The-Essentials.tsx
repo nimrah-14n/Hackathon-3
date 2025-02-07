@@ -4,10 +4,11 @@ import {
   getEssentialsWomensData,
 } from "@/sanity/lib/getData";
 import { urlFor } from "@/sanity/lib/image";
-import { BannerData } from "@/types/banner";
+// import { BannerData } from "@/types/banner";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { BannerData } from "../../types/banner";
 
 const ESSENTIALS = async () => {
   const menbanners: BannerData[] = await getEssentialsMensData();

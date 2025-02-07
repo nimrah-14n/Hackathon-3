@@ -12,12 +12,13 @@ import {
   getWishlistItems,
   moveAllToCart,
 } from "@/app/actions/actions";
-import { Product } from "@/types/product";
+// import { Product } from "@/types/product";
 import { urlFor } from "@/sanity/lib/image";
 import { client } from "@/sanity/lib/client";
 import { allProductsQuery } from "@/sanity/lib/queries";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
+import { Product } from "../../types/product";
 
 
 
